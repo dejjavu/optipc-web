@@ -1,15 +1,14 @@
-OPTIPC - Web
-==============
-Archivos:
-- index.html       página completa
-- logo-optipc.jpg  logo original subido
-- logo-mark.png    símbolo compacto para header
-- favicon.png      favicon
+OPTIPC - WEB FINAL
+==================
+Subir juntos:
+- index.html
+- logo-optipc.jpg
 
-Subida:
-Subí los 4 archivos a la misma carpeta del hosting y abrí index.html como página principal.
+index.html es la página principal.
 
-WhatsApp:
-El número configurado es 5493876041010.
+Datos configurados:
+WhatsApp: 5493876041010
 Instagram: @optipcinformatica
 TikTok: @optipcinformatica
+
+El diseño es responsive y no requiere librerías externas.
