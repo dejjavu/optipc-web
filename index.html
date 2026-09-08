@@ -16,6 +16,48 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Datos estructurados para SEO Local en Salta -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ComputerRepairService",
+  "name": "OptiPC",
+  "image": "logo-optipc.jpg",
+  "@id": "",
+  "url": "",
+  "telephone": "+5493876041010",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Salta",
+    "addressRegion": "Salta",
+    "addressCountry": "AR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -24.7821,
+    "longitude": -65.4232
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "opens": "09:00",
+    "closes": "20:00"
+  },
+  "sameAs": [
+    "https://instagram.com/optipcinformatica",
+    "https://www.tiktok.com/@optipcinformatica"
+  ]
+}
+</script>
+
 <style>
 :root{
   --bg:#030b14;
@@ -39,7 +81,6 @@
 html{scroll-behavior:smooth}
 body{font-family:'Inter',system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--white);background:var(--bg);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 
-/* Fondo texturizado premium sin aspecto de plantilla */
 body::before{
   content:"";
   position:fixed;
@@ -56,7 +97,6 @@ body::before{
 a{text-decoration:none;color:inherit}
 .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
 
-/* Header & Nav */
 header{
   position:fixed;
   z-index:100;
@@ -74,7 +114,7 @@ nav{height:80px;display:flex;align-items:center;justify-content:space-between}
 .brand b{font-size:20px;letter-spacing:-0.02em;font-weight:800}
 .brand b span{color:var(--cyan)}
 
-.nav{display:flex;align-items:center;gap:28px;list-style:none}
+.nav{display:flex;align-items:center;gap:26px;list-style:none}
 .nav a{font-size:13px;color:var(--muted);font-weight:600;transition:var(--transition);position:relative}
 .nav a:not(.wa):hover{color:var(--white)}
 .nav a:not(.wa)::after{
@@ -100,7 +140,6 @@ nav{height:80px;display:flex;align-items:center;justify-content:space-between}
 
 .menu{display:none;background:none;border:0;color:#fff;font-size:26px;cursor:pointer;padding:4px}
 
-/* Hero Section */
 .hero{
   min-height:100vh;
   padding:150px 0 90px;
@@ -198,7 +237,6 @@ h1 span{
 }
 .trust b{color:var(--white); font-weight:600}
 
-/* Visual Box / Hero Graphic */
 .visual{
   position:relative;
   min-height:480px;
@@ -241,7 +279,6 @@ h1 span{
   50% { transform: translateY(-6px); }
 }
 
-/* Sections Global */
 section{padding:100px 0;position:relative}
 section:nth-of-type(even){background:rgba(255,255,255,0.008)}
 .section-title{text-align:center;max-width:720px;margin:0 auto 50px}
@@ -249,7 +286,6 @@ section:nth-of-type(even){background:rgba(255,255,255,0.008)}
 .section-title h2{font-size:clamp(32px, 4.5vw, 48px);line-height:1.1;letter-spacing:-0.03em;font-weight:800}
 .section-title p{color:var(--muted);margin-top:12px;font-size:16px}
 
-/* Remote Section */
 .remote{
   border:1px solid rgba(8,189,245,0.25);
   border-radius:24px;
@@ -273,7 +309,6 @@ section:nth-of-type(even){background:rgba(255,255,255,0.008)}
 .step b{font-size:13px;font-weight:700}
 .step small{display:block;color:var(--muted);font-size:11px}
 
-/* Services Cards Modernizadas */
 .services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .card{
   padding:32px 28px;
@@ -283,6 +318,9 @@ section:nth-of-type(even){background:rgba(255,255,255,0.008)}
   transition:var(--transition);
   position:relative;
   overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
 }
 .card::before{
   content:'';
@@ -315,9 +353,26 @@ section:nth-of-type(even){background:rgba(255,255,255,0.008)}
 }
 .icon svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .card h3{font-size:18px;margin-bottom:8px;font-weight:700;letter-spacing:-0.01em}
-.card p{color:var(--muted);font-size:13px;line-height:1.6}
+.card p{color:var(--muted);font-size:13px;line-height:1.6;margin-bottom:20px}
+.card-action{font-size:12px;color:var(--cyan);font-weight:700;display:inline-flex;align-items:center;gap:4px;transition:var(--transition)}
+.card:hover .card-action{gap:8px}
 
-/* Buy Section */
+/* Testimonios Nuevos */
+.testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.testimonial-card{
+  padding:28px;
+  border:1px solid var(--line);
+  border-radius:20px;
+  background:rgba(255,255,255,0.015);
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+.stars{color:#f59e0b;font-size:14px;margin-bottom:12px;letter-spacing:2px}
+.testimonial-card p{color:var(--muted);font-size:13px;font-style:italic;margin-bottom:16px;line-height:1.6}
+.client b{display:block;font-size:13px;color:var(--white);font-weight:700}
+.client small{color:var(--muted);font-size:11px}
+
 .buy{
   display:grid;
   grid-template-columns:1fr 1.1fr;
@@ -338,7 +393,6 @@ section:nth-of-type(even){background:rgba(255,255,255,0.008)}
 .point b{font-size:13px;display:block;margin-bottom:4px;font-weight:700}
 .point small{font-size:11px;color:var(--muted);line-height:1.4}
 
-/* About Section */
 .about{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
 .about h2{font-size:clamp(30px, 3.8vw, 46px);line-height:1.1;letter-spacing:-0.03em;margin:10px 0 20px;font-weight:800}
 .about h2 span{color:var(--cyan)}
@@ -350,7 +404,6 @@ section:nth-of-type(even){background:rgba(255,255,255,0.008)}
 .feature b{font-size:13px;display:block;margin-bottom:2px;font-weight:700}
 .feature small{display:block;color:var(--muted);font-size:11px}
 
-/* CTA Section */
 .cta{
   padding:90px 0;
   text-align:center;
@@ -361,7 +414,6 @@ section:nth-of-type(even){background:rgba(255,255,255,0.008)}
 .cta h2{font-size:clamp(34px, 4.5vw, 52px);line-height:1.1;letter-spacing:-0.03em;margin:12px 0;font-weight:900}
 .cta p{max-width:600px;margin:0 auto 28px;color:var(--muted);font-size:16px}
 
-/* Contact Section */
 .contact{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .contact a{
   padding:32px 24px;
@@ -381,13 +433,11 @@ section:nth-of-type(even){background:rgba(255,255,255,0.008)}
 .contact b{font-size:15px;display:block;margin-bottom:4px;font-weight:700}
 .contact small{display:block;color:var(--muted);font-size:12px}
 
-/* Footer */
 footer{border-top:1px solid var(--line);padding:35px 0;color:var(--muted);font-size:11px}
 .foot{display:flex;justify-content:space-between;gap:20px;align-items:center}
 .foot b{color:var(--white);font-weight:700}
 .foot span{color:var(--cyan)}
 
-/* WhatsApp Flotante con pulso */
 .float-wa{
   position:fixed;
   right:24px;
@@ -416,7 +466,6 @@ footer{border-top:1px solid var(--line);padding:35px 0;color:var(--muted);font-s
   100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
 }
 
-/* Responsive Design Avanzado para Celular */
 @media(max-width:992px){
   .nav{
     position:absolute;
@@ -437,7 +486,7 @@ footer{border-top:1px solid var(--line);padding:35px 0;color:var(--muted);font-s
   .menu{display:block}
   .hero-grid, .remote, .buy, .about{grid-template-columns:1fr; gap:40px}
   .visual{min-height:380px; order:-1}
-  .services, .contact{grid-template-columns:1fr}
+  .services, .testimonials, .contact{grid-template-columns:1fr}
   .hero{padding-top:120px}
 }
 
@@ -483,7 +532,7 @@ footer{border-top:1px solid var(--line);padding:35px 0;color:var(--muted);font-s
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#servicios">Servicios</a></li>
         <li><a href="#remoto">Instalación Remota</a></li>
-        <li><a href="#compra">PC y Notebooks</a></li>
+        <li><a href="#compra">PC y Hardware</a></li>
         <li><a href="#nosotros">Empresa</a></li>
         <li><a href="#contacto">Contacto</a></li>
         <li><a class="wa" href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20quiero%20hacer%20una%20consulta%20técnica" target="_blank" rel="noopener">WhatsApp</a></li>
@@ -591,45 +640,108 @@ footer{border-top:1px solid var(--line);padding:35px 0;color:var(--muted);font-s
       </div>
       <div class="services">
         <article class="card">
-          <div class="icon">
-            <svg viewBox="0 0 24 24"><path d="M6 12h12M12 6v12"/></svg>
+          <div>
+            <div class="icon">
+              <svg viewBox="0 0 24 24"><path d="M6 12h12M12 6v12"/></svg>
+            </div>
+            <h3>Optimización para Gaming</h3>
+            <p>Máximo frame rate (FPS), reducción de latencia, ajuste fino de sistema operativo y perfiles de alto rendimiento para competir al más alto nivel.</p>
           </div>
-          <h3>Optimización para Gaming</h3>
-          <p>Máximo frame rate (FPS), reducción de latencia, ajuste fino de sistema operativo y perfiles de alto rendimiento para competir al más alto nivel.</p>
+          <a class="card-action" href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20quiero%20consultar%20sobre%20la%20Optimización%20para%20Gaming" target="_blank" rel="noopener">Consultar servicio →</a>
         </article>
         <article class="card">
-          <div class="icon">
-            <svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="8"/></svg></div>
-          <h3>Upgrades de Hardware</h3>
-          <p>Potenciá tu equipo con instalación profesional de unidades NVMe, ampliación de memoria RAM y componentes de alta gama compatibles.</p>
-        </article>
-        <article class="card">
-          <div class="icon">
-            <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16m-7 6h7"/></svg>
+          <div>
+            <div class="icon">
+              <svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="8"/></svg>
+            </div>
+            <h3>Upgrades de Hardware</h3>
+            <p>Potenciá tu equipo con instalación profesional de unidades NVMe, ampliación de memoria RAM y componentes de alta gama compatibles.</p>
           </div>
-          <h3>Actualización de BIOS</h3>
-          <p>Optimización de estabilidad, soporte para nuevas generaciones de procesadores y máxima compatibilidad de memoria en plataformas Ryzen e Intel.</p>
+          <a class="card-action" href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20quiero%20hacer%20un%20Upgrade%20de%20Hardware" target="_blank" rel="noopener">Consultar servicio →</a>
         </article>
         <article class="card">
-          <div class="icon">
-            <svg viewBox="0 0 24 24"><path d="M6 4h12M5 8h14M4 12h16M6 16h12M8 20h8"/></svg>
+          <div>
+            <div class="icon">
+              <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16m-7 6h7"/></svg>
+            </div>
+            <h3>Actualización de BIOS</h3>
+            <p>Optimización de estabilidad, soporte para nuevas generaciones de procesadores y máxima compatibilidad de memoria en plataformas Ryzen e Intel.</p>
           </div>
-          <h3>Mantenimiento Preventivo</h3>
-          <p>Limpieza profunda de componentes, recambio de pasta térmica de alta gama y gestión térmica para garantizar la vida útil del equipo.</p>
+          <a class="card-action" href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20necesito%20actualizar%20la%20BIOS" target="_blank" rel="noopener">Consultar servicio →</a>
         </article>
         <article class="card">
-          <div class="icon">
-            <svg viewBox="0 0 24 24"><path d="M3 5h18v14H3z"/><path d="M7 9h10M7 13h6"/></svg></div>
-          <h3>Asesoramiento Tecnológico</h3>
-          <p>Te orientamos en la selección de equipos y componentes equilibrados según tus requerimientos reales de carga de trabajo y presupuesto.</p>
-        </article>
-        <article class="card">
-          <div class="icon">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>
+          <div>
+            <div class="icon">
+              <svg viewBox="0 0 24 24"><path d="M6 4h12M5 8h14M4 12h16M6 16h12M8 20h8"/></svg>
+            </div>
+            <h3>Mantenimiento Preventivo</h3>
+            <p>Limpieza profunda de componentes, recambio de pasta térmica de alta gama y gestión térmica para garantizar la vida útil del equipo.</p>
           </div>
-          <h3>Diagnóstico y Reparación</h3>
-          <p>Detección precisa de fallas en hardware y software con soluciones orientadas a la durabilidad y correcto funcionamiento.</p>
+          <a class="card-action" href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20quiero%20coordinar%20mantenimiento%20preventivo" target="_blank" rel="noopener">Consultar servicio →</a>
         </article>
+        <article class="card">
+          <div>
+            <div class="icon">
+              <svg viewBox="0 0 24 24"><path d="M3 5h18v14H3z"/><path d="M7 9h10M7 13h6"/></svg>
+            </div>
+            <h3>Asesoramiento Tecnológico</h3>
+            <p>Te orientamos en la selección de equipos y componentes equilibrados según tus requerimientos reales de carga de trabajo y presupuesto.</p>
+          </div>
+          <a class="card-action" href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20necesito%20asesoramiento%20tecnológico" target="_blank" rel="noopener">Consultar servicio →</a>
+        </article>
+        <article class="card">
+          <div>
+            <div class="icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>
+            </div>
+            <h3>Diagnóstico y Reparación</h3>
+            <p>Detección precisa de fallas en hardware y software con soluciones orientadas a la durabilidad y correcto funcionamiento.</p>
+          </div>
+          <a class="card-action" href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20necesito%20un%20diagnóstico%20técnico" target="_blank" rel="noopener">Consultar servicio →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nueva Sección de Reseñas de Clientes -->
+  <section style="background:rgba(255,255,255,0.004)">
+    <div class="wrap">
+      <div class="section-title">
+        <div class="kicker">Confianza y Experiencia</div>
+        <h2>Lo que dicen nuestros clientes</h2>
+        <p>Atención profesional y resultados comprobados en cada equipo.</p>
+      </div>
+      <div class="testimonials">
+        <div class="testimonial-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p>"Llevé mi PC para optimización gaming y un cambio de pasta térmica. Vuela y bajó la temperatura un montón. Excelente atención."</p>
+          </div>
+          <div class="client">
+            <b>Franco G.</b>
+            <small>Jugador de CS2 / Salta</small>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p>"Me instalaron software de arquitectura a distancia sin que tenga que mover la PC del estudio. Súper rápido y seguro."</p>
+          </div>
+          <div class="client">
+            <b>Arq. Lucía M.</b>
+            <small>Estudio de Arquitectura</small>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p>"Me asesoraron perfecto para armar componentes equilibrados sin gastar de más. Muy honestos y profesionales."</p>
+          </div>
+          <div class="client">
+            <b>Matías R.</b>
+            <small>Cliente particular</small>
+          </div>
+        </div>
       </div>
     </div>
   </section>
