@@ -2,883 +2,2977 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>OptiPC | Empresa de Informática y Soluciones Tecnológicas en Salta</title>
-<meta name="description" content="OptiPC: Empresa de informática en Salta. Instalación de software a distancia, optimización avanzada para gaming, upgrades de hardware, mantenimiento y soporte técnico profesional.">
-<meta name="keywords" content="soporte tecnico pc salta, optimizacion gaming salta, instalacion de software remota, armado de pc salta, optipc">
+
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+
+<title>OptiPC | Informática en Salta</title>
+
+<meta name="description" content="OptiPC: soporte informático, instalación de software a distancia, mantenimiento, upgrades, PC y notebooks y asesoramiento tecnológico en Salta.">
+
+<meta name="keywords" content="OptiPC, informática Salta, soporte técnico Salta, instalación software, PC Salta, notebooks Salta, upgrade PC, mantenimiento PC">
+
 <meta name="author" content="OptiPC">
-<meta name="theme-color" content="#030b14">
-<meta property="og:title" content="OptiPC | Informática y Soluciones Tecnológicas">
-<meta property="og:description" content="Todo lo que tu PC necesita. Sin vueltas. Rendimiento, soporte y tecnología profesional en Salta.">
+<meta name="robots" content="index,follow">
+
+<meta name="theme-color" content="#050b12">
+
+<meta property="og:title" content="OptiPC | Informática en Salta">
+<meta property="og:description" content="Todo lo que tu PC necesita. Sin vueltas.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_AR">
-<link rel="icon" href="logo-optipc.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<meta property="og:image" content="logo-optipc.jpg">
 
-<!-- Datos estructurados para SEO Local en Salta -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ComputerRepairService",
-  "name": "OptiPC",
-  "image": "logo-optipc.jpg",
-  "@id": "",
-  "url": "",
-  "telephone": "+5493876041010",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Salta",
-    "addressRegion": "Salta",
-    "addressCountry": "AR"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": -24.7821,
-    "longitude": -65.4232
-  },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday"
-    ],
-    "opens": "09:00",
-    "closes": "20:00"
-  },
-  "sameAs": [
-    "https://instagram.com/optipcinformatica",
-    "https://www.tiktok.com/@optipcinformatica"
-  ]
-}
-</script>
+<link rel="icon" href="logo-optipc.jpg">
+<link rel="apple-touch-icon" href="logo-optipc.jpg">
 
 <style>
+
+/* =========================================================
+   OPTIPC — VERSION 2.0
+   ========================================================= */
+
 :root{
-  --bg:#030b14;
-  --bg-rgb:3,11,20;
-  --panel:rgba(9, 24, 39, 0.75);
-  --panel-solid:#091827;
-  --panel2:#0d2032;
-  --cyan:#08bdf5;
-  --cyan-rgb:8,189,245;
-  --cyan2:#56dcff;
-  --white:#f5fbff;
-  --muted:#8ca2b5;
-  --line:rgba(18, 52, 76, 0.6);
-  --line-hover:rgba(8, 189, 245, 0.4);
-  --green:#25d366;
-  --max:1180px;
-  --transition:all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    --bg:#03080e;
+    --bg-soft:#06111b;
+    --panel:#081622;
+    --panel-2:#0b1c2b;
+
+    --cyan:#08bdf5;
+    --cyan-light:#61ddff;
+    --cyan-dark:#087fae;
+
+    --white:#f5fbff;
+    --text:#d7e5ed;
+    --muted:#8299aa;
+    --muted-2:#607889;
+
+    --line:rgba(95,175,215,.16);
+    --line-strong:rgba(8,189,245,.35);
+
+    --green:#25d366;
+
+    --max:1180px;
+
+    --shadow:0 30px 90px rgba(0,0,0,.38);
+    --shadow-soft:0 15px 45px rgba(0,0,0,.25);
+
+    --radius:20px;
 }
 
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Inter',system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--white);background:var(--bg);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+/* RESET */
 
-body::before{
-  content:"";
-  position:fixed;
-  inset:0;
-  pointer-events:none;
-  z-index:-1;
-  background-image: 
-    radial-gradient(circle at 50% 0%, rgba(8, 189, 245, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 90% 90%, rgba(0, 106, 160, 0.05) 0%, transparent 40%),
-    radial-gradient(rgba(18, 52, 76, 0.15) 1px, transparent 1px);
-  background-size: 100% 100%, 100% 100%, 28px 28px;
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
-a{text-decoration:none;color:inherit}
-.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+html{
+    scroll-behavior:smooth;
+    scroll-padding-top:90px;
+}
+
+body{
+    font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    color:var(--white);
+    background:var(--bg);
+
+    line-height:1.55;
+    overflow-x:hidden;
+
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+}
+
+body:before{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:-3;
+    pointer-events:none;
+
+    background:
+        radial-gradient(
+            circle at 75% 8%,
+            rgba(8,189,245,.12),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 5% 35%,
+            rgba(0,110,170,.08),
+            transparent 30%
+        );
+}
+
+body:after{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:-2;
+    pointer-events:none;
+
+    opacity:.035;
+
+    background-image:
+        linear-gradient(rgba(255,255,255,.8) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(255,255,255,.8) 1px,transparent 1px);
+
+    background-size:55px 55px;
+
+    mask-image:linear-gradient(
+        to bottom,
+        black,
+        transparent 80%
+    );
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+button{
+    font:inherit;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+.wrap{
+    width:min(var(--max),calc(100% - 36px));
+    margin:auto;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
 
 header{
-  position:fixed;
-  z-index:100;
-  top:0;left:0;right:0;
-  background:rgba(3, 11, 20, 0.82);
-  backdrop-filter:blur(20px);
-  -webkit-backdrop-filter:blur(20px);
-  border-bottom:1px solid var(--line);
-  transition: var(--transition);
-}
-nav{height:80px;display:flex;align-items:center;justify-content:space-between}
-.brand{display:flex;align-items:center;gap:12px;transition: var(--transition)}
-.brand:hover{opacity:0.9}
-.brand img{width:45px;height:45px;object-fit:cover;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.3)}
-.brand b{font-size:20px;letter-spacing:-0.02em;font-weight:800}
-.brand b span{color:var(--cyan)}
+    position:fixed;
+    z-index:100;
+    top:0;
+    left:0;
+    right:0;
 
-.nav{display:flex;align-items:center;gap:26px;list-style:none}
-.nav a{font-size:13px;color:var(--muted);font-weight:600;transition:var(--transition);position:relative}
-.nav a:not(.wa):hover{color:var(--white)}
-.nav a:not(.wa)::after{
-  content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--cyan);transition:var(--transition);border-radius:2px;
+    background:rgba(2,8,14,.72);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+
+    border-bottom:1px solid rgba(100,180,220,.10);
 }
-.nav a:not(.wa):hover::after{width:100%}
+
+nav{
+    height:74px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:11px;
+}
+
+.brand img{
+    width:43px;
+    height:43px;
+
+    object-fit:cover;
+
+    border-radius:11px;
+
+    box-shadow:
+        0 0 0 1px rgba(8,189,245,.15),
+        0 8px 25px rgba(0,0,0,.35);
+}
+
+.brand b{
+    font-size:21px;
+    font-weight:900;
+    letter-spacing:.025em;
+}
+
+.brand b span{
+    color:var(--cyan);
+}
+
+.nav{
+    display:flex;
+    align-items:center;
+    gap:24px;
+
+    list-style:none;
+}
+
+.nav a{
+    position:relative;
+
+    font-size:12px;
+    font-weight:750;
+
+    color:#9fb3c1;
+
+    transition:.2s ease;
+}
+
+.nav a:not(.wa):after{
+    content:"";
+    position:absolute;
+
+    left:0;
+    right:100%;
+    bottom:-7px;
+
+    height:1px;
+
+    background:var(--cyan);
+
+    transition:.25s ease;
+}
+
+.nav a:hover{
+    color:#fff;
+}
+
+.nav a:not(.wa):hover:after{
+    right:0;
+}
+
 .nav .wa{
-  padding:10px 18px;
-  border:1px solid rgba(8,189,245,0.4);
-  border-radius:12px;
-  color:#fff;
-  background:rgba(8,189,245,0.06);
-  font-weight:700;
-  box-shadow: 0 4px 15px rgba(8,189,245,0.1);
-  transition: var(--transition);
-}
-.nav .wa:hover{
-  background:rgba(8,189,245,0.15);
-  border-color:var(--cyan);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(8,189,245,0.2);
+    padding:9px 15px;
+
+    border:1px solid rgba(8,189,245,.5);
+    border-radius:10px;
+
+    color:#fff;
+
+    background:rgba(8,189,245,.08);
+
+    transition:.2s ease;
 }
 
-.menu{display:none;background:none;border:0;color:#fff;font-size:26px;cursor:pointer;padding:4px}
+.nav .wa:hover{
+    background:rgba(8,189,245,.16);
+    transform:translateY(-1px);
+}
+
+.menu{
+    display:none;
+
+    border:0;
+    background:none;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    font-size:27px;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
 
 .hero{
-  min-height:100vh;
-  padding:150px 0 90px;
-  display:flex;
-  align-items:center;
-  position:relative;
+    min-height:100svh;
+
+    padding:135px 0 80px;
+
+    display:flex;
+    align-items:center;
+
+    position:relative;
 }
-.hero-glow{
-  position:absolute;
-  width:600px;
-  height:600px;
-  right:-100px;
-  top:100px;
-  border-radius:50%;
-  background:radial-gradient(circle, rgba(8,189,245,0.12) 0%, transparent 70%);
-  filter:blur(80px);
-  pointer-events:none;
+
+.hero-grid{
+    display:grid;
+
+    grid-template-columns:
+        minmax(0,.92fr)
+        minmax(0,1.08fr);
+
+    gap:55px;
+
+    align-items:center;
 }
-.hero-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:50px;align-items:center}
+
 .kicker{
-  display:inline-block;
-  color:var(--cyan2);
-  font-size:11px;
-  letter-spacing:0.25em;
-  font-weight:800;
-  text-transform:uppercase;
-  margin-bottom:12px;
-  padding:4px 10px;
-  background:rgba(8,189,245,0.08);
-  border:1px solid rgba(8,189,245,0.2);
-  border-radius:6px;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    color:var(--cyan-light);
+
+    font-size:10px;
+    font-weight:900;
+
+    letter-spacing:.22em;
+    text-transform:uppercase;
 }
+
+.kicker:before{
+    content:"";
+
+    width:7px;
+    height:7px;
+
+    border-radius:50%;
+
+    background:var(--cyan);
+
+    box-shadow:0 0 14px rgba(8,189,245,.7);
+}
+
 h1{
-  font-size:clamp(42px, 5.5vw, 72px);
-  line-height:1.02;
-  letter-spacing:-0.04em;
-  font-weight:900;
-  margin-bottom:20px;
+    max-width:700px;
+
+    font-size:clamp(46px,6vw,78px);
+
+    line-height:.96;
+
+    letter-spacing:-.06em;
+
+    margin:17px 0 22px;
 }
+
 h1 span{
-  color:var(--cyan);
-  text-shadow:0 0 40px rgba(8,189,245,0.25);
+    color:var(--cyan);
+
+    text-shadow:
+        0 0 35px rgba(8,189,245,.25);
 }
+
 .lead{
-  font-size:16px;
-  color:var(--muted);
-  max-width:540px;
-  margin-bottom:30px;
-  line-height:1.7;
+    max-width:590px;
+
+    color:var(--muted);
+
+    font-size:17px;
+
+    margin-bottom:27px;
 }
-.actions{display:flex;gap:14px;flex-wrap:wrap}
+
+.actions{
+    display:flex;
+    gap:11px;
+    flex-wrap:wrap;
+}
+
 .btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:8px;
-  padding:14px 22px;
-  border-radius:12px;
-  font-weight:800;
-  font-size:13px;
-  transition:var(--transition);
-  cursor:pointer;
-  letter-spacing:0.01em;
+    min-height:46px;
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+
+    padding:12px 18px;
+
+    border-radius:11px;
+
+    font-size:12px;
+    font-weight:900;
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        border-color .2s ease,
+        background .2s ease;
 }
+
 .primary{
-  background:linear-gradient(135deg, #00aceb 0%, #25caff 100%);
-  color:#02101a;
-  box-shadow:0 8px 25px rgba(0,190,250,0.25);
-  border:none;
+    color:#021019;
+
+    background:
+        linear-gradient(
+            135deg,
+            #00aceb,
+            #4bdcff
+        );
+
+    box-shadow:
+        0 12px 35px rgba(0,190,250,.16);
 }
+
 .primary:hover{
-  transform:translateY(-3px);
-  box-shadow:0 12px 35px rgba(0,190,250,0.4);
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 18px 45px rgba(0,190,250,.28);
 }
+
 .secondary{
-  border:1px solid var(--line);
-  background:rgba(255,255,255,0.02);
-  color:var(--white);
+    border:1px solid var(--line);
+
+    background:rgba(255,255,255,.025);
 }
+
 .secondary:hover{
-  border-color:var(--cyan);
-  background:rgba(8,189,245,0.05);
-  transform:translateY(-3px);
+    transform:translateY(-2px);
+
+    border-color:var(--line-strong);
+
+    background:rgba(8,189,245,.05);
 }
 
 .trust{
-  display:flex;
-  gap:24px;
-  flex-wrap:wrap;
-  margin-top:35px;
-  padding-top:25px;
-  border-top:1px solid var(--line);
-  color:var(--muted);
-  font-size:12px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:18px;
+
+    margin-top:27px;
+
+    color:#6f8798;
+
+    font-size:10px;
 }
-.trust b{color:var(--white); font-weight:600}
+
+.trust span{
+    display:flex;
+    align-items:center;
+    gap:5px;
+}
+
+.trust b{
+    color:#b8cad5;
+}
+
+/* =========================================================
+   HERO VISUAL
+   ========================================================= */
 
 .visual{
-  position:relative;
-  min-height:480px;
-  border-radius:28px;
-  overflow:hidden;
-  background:radial-gradient(circle at 50% 50%, rgba(8,189,245,0.1) 0%, transparent 60%), linear-gradient(145deg, #071524, #040d16);
-  border:1px solid rgba(8,189,245,0.2);
-  box-shadow:0 30px 80px rgba(0,0,0,0.5);
+    position:relative;
+
+    min-height:505px;
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+    border:1px solid rgba(8,189,245,.18);
+
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            rgba(8,189,245,.15),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 80% 80%,
+            rgba(0,104,160,.12),
+            transparent 35%
+        ),
+        linear-gradient(
+            145deg,
+            #091722,
+            #030b13
+        );
+
+    box-shadow:var(--shadow);
 }
-.monitor{position:absolute;left:12%;top:15%;width:52%;height:45%;border:7px solid #101d29;border-radius:14px;background:radial-gradient(circle at 50% 40%,#0c91cf,#052238 70%);box-shadow:0 0 40px rgba(8,189,245,0.25), inset 0 0 25px rgba(0,200,255,0.2)}
-.monitor::after{content:"";position:absolute;left:45%;bottom:-22%;width:10%;height:22%;background:#122536}
-.monitor::before{content:"";position:absolute;left:35%;bottom:-28%;width:30%;height:8%;border-radius:50%;background:#16364b}
-.case{position:absolute;right:6%;top:14%;width:30%;height:68%;border-radius:16px;background:linear-gradient(145deg,#0e1a26,#050d15);border:2px solid #162d3e;box-shadow:0 0 35px rgba(8,189,245,0.15)}
-.case::before,.case::after{content:"";position:absolute;width:42px;height:42px;border-radius:50%;right:15%;border:4px solid #0b8dc2;background:radial-gradient(circle,#1ed4ff 0 14%,#061321 16% 48%,#12a9df 50% 55%,#06111b 57%);box-shadow:0 0 15px var(--cyan)}
-.case::before{top:18%}.case::after{top:38%}
-.keyboard{position:absolute;left:14%;bottom:8%;width:50%;height:7%;transform:skewX(-20deg);border-radius:6px;background:repeating-linear-gradient(90deg,#172b3a 0 8px,#08131d 8px 11px);box-shadow:0 8px 25px #000}
-.mouse{position:absolute;right:22%;bottom:10%;width:6%;height:7%;border-radius:50%;background:#12283a}
-.hero-logo{position:absolute;left:10%;bottom:9%;z-index:4;width:110px;border-radius:50%;box-shadow:0 10px 30px rgba(0,0,0,0.6);border:2px solid rgba(8,189,245,0.3)}
+
+.visual:before{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:
+        linear-gradient(
+            125deg,
+            transparent 0 42%,
+            rgba(255,255,255,.025) 43%,
+            transparent 44%
+        );
+
+    opacity:.8;
+}
+
+.visual:after{
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+    height:320px;
+
+    left:50%;
+    top:48%;
+
+    transform:translate(-50%,-50%);
+
+    border-radius:50%;
+
+    border:1px solid rgba(8,189,245,.08);
+
+    box-shadow:
+        0 0 0 35px rgba(8,189,245,.015),
+        0 0 0 70px rgba(8,189,245,.012),
+        0 0 0 105px rgba(8,189,245,.009);
+}
+
+/* TECH GRID */
+
+.tech-grid{
+    position:absolute;
+    inset:0;
+
+    opacity:.18;
+
+    background-image:
+        linear-gradient(rgba(8,189,245,.22) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(8,189,245,.22) 1px,transparent 1px);
+
+    background-size:35px 35px;
+
+    mask-image:
+        radial-gradient(
+            circle at center,
+            black,
+            transparent 68%
+        );
+}
+
+/* PC */
+
+.pc-art{
+    position:absolute;
+
+    left:8%;
+    right:5%;
+    top:14%;
+    bottom:4%;
+}
+
+/* MONITOR */
+
+.monitor{
+    position:absolute;
+
+    left:5%;
+    top:8%;
+
+    width:59%;
+    height:52%;
+
+    border:9px solid #111e29;
+
+    border-radius:14px;
+
+    background:
+        radial-gradient(
+            circle at 50% 40%,
+            #0d9bd7,
+            #073653 58%,
+            #020d16 100%
+        );
+
+    box-shadow:
+        0 0 40px rgba(0,188,255,.24),
+        inset 0 0 40px rgba(0,200,255,.13),
+        0 25px 40px rgba(0,0,0,.4);
+}
+
+.monitor:before{
+    content:"";
+
+    position:absolute;
+
+    left:15%;
+    right:15%;
+    top:17%;
+    bottom:17%;
+
+    border-radius:8px;
+
+    border:1px solid rgba(130,230,255,.25);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.08),
+            transparent 40%
+        );
+}
+
+.monitor:after{
+    content:"";
+
+    position:absolute;
+
+    left:46%;
+    bottom:-22%;
+
+    width:8%;
+    height:22%;
+
+    background:#142838;
+
+    box-shadow:
+        0 18px 0 -5px #18374b;
+}
+
+/* CASE */
+
+.case{
+    position:absolute;
+
+    right:1%;
+    top:6%;
+
+    width:31%;
+    height:73%;
+
+    border-radius:17px;
+
+    border:2px solid #183244;
+
+    background:
+        linear-gradient(
+            145deg,
+            #101e2a,
+            #050d15
+        );
+
+    box-shadow:
+        0 0 40px rgba(0,181,245,.15),
+        0 30px 50px rgba(0,0,0,.45);
+}
+
+.case:before,
+.case:after{
+    content:"";
+
+    position:absolute;
+
+    right:13%;
+
+    width:53px;
+    height:53px;
+
+    border-radius:50%;
+
+    border:5px solid #087fae;
+
+    background:
+        radial-gradient(
+            circle,
+            #36dcff 0 12%,
+            #061321 14% 47%,
+            #12a9df 49% 55%,
+            #06111b 57%
+        );
+
+    box-shadow:
+        0 0 20px rgba(8,189,245,.65);
+}
+
+.case:before{
+    top:15%;
+}
+
+.case:after{
+    top:36%;
+}
+
+.case-glow{
+    position:absolute;
+
+    left:10%;
+    right:10%;
+    bottom:8%;
+
+    height:3px;
+
+    background:var(--cyan);
+
+    box-shadow:
+        0 0 14px var(--cyan);
+
+    opacity:.7;
+}
+
+/* KEYBOARD */
+
+.keyboard{
+    position:absolute;
+
+    left:6%;
+    bottom:4%;
+
+    width:60%;
+    height:8%;
+
+    transform:skewX(-25deg);
+
+    border-radius:5px;
+
+    background:
+        repeating-linear-gradient(
+            90deg,
+            #172c3c 0 9px,
+            #08131d 9px 12px
+        );
+
+    box-shadow:
+        0 12px 30px #000;
+}
+
+/* MOUSE */
+
+.mouse{
+    position:absolute;
+
+    right:19%;
+    bottom:6%;
+
+    width:7%;
+    height:8%;
+
+    border-radius:50%;
+
+    background:#13293a;
+
+    box-shadow:
+        0 10px 20px #000;
+}
+
+/* LOGO */
+
+.hero-logo{
+    position:absolute;
+
+    left:8%;
+    bottom:8%;
+
+    z-index:4;
+
+    width:100px;
+
+    border-radius:50%;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.65),
+        0 0 0 1px rgba(8,189,245,.2);
+}
+
+/* BADGES */
 
 .badge{
-  position:absolute;
-  z-index:5;
-  padding:12px 16px;
-  border:1px solid rgba(8,189,245,0.3);
-  background:rgba(4,16,27,0.88);
-  backdrop-filter:blur(12px);
-  -webkit-backdrop-filter:blur(12px);
-  border-radius:14px;
-  font-size:11px;
-  color:var(--muted);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-  animation: floatBadge 4s ease-in-out infinite;
-}
-.badge strong{display:block;color:#fff;font-size:13px;font-weight:700}
-.b1{right:5%;bottom:12%; animation-delay: 2s;}
-.b2{right:6%;top:8%}
+    position:absolute;
+    z-index:6;
 
-@keyframes floatBadge {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
+    padding:11px 14px;
+
+    border:1px solid rgba(8,189,245,.3);
+
+    background:rgba(4,16,27,.78);
+
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+
+    border-radius:13px;
+
+    color:#a9bfcb;
+
+    font-size:10px;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.3);
 }
 
-section{padding:100px 0;position:relative}
-section:nth-of-type(even){background:rgba(255,255,255,0.008)}
-.section-title{text-align:center;max-width:720px;margin:0 auto 50px}
-.section-title .kicker{margin-bottom:12px}
-.section-title h2{font-size:clamp(32px, 4.5vw, 48px);line-height:1.1;letter-spacing:-0.03em;font-weight:800}
-.section-title p{color:var(--muted);margin-top:12px;font-size:16px}
+.badge strong{
+    display:block;
+
+    color:#fff;
+
+    font-size:12px;
+
+    margin-bottom:2px;
+}
+
+.b1{
+    right:4%;
+    bottom:9%;
+}
+
+.b2{
+    right:4%;
+    top:6%;
+}
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+
+section{
+    position:relative;
+
+    padding:105px 0;
+}
+
+section:nth-of-type(even){
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.008),
+            rgba(255,255,255,.018),
+            rgba(255,255,255,.008)
+        );
+}
+
+.section-title{
+    max-width:720px;
+
+    text-align:center;
+
+    margin:0 auto 45px;
+}
+
+.section-title .kicker{
+    margin-bottom:10px;
+}
+
+.section-title h2{
+    font-size:clamp(32px,4.5vw,50px);
+
+    line-height:1.04;
+
+    letter-spacing:-.05em;
+}
+
+.section-title p{
+    color:var(--muted);
+
+    margin-top:13px;
+
+    font-size:14px;
+}
+
+/* =========================================================
+   REMOTE
+   ========================================================= */
 
 .remote{
-  border:1px solid rgba(8,189,245,0.25);
-  border-radius:24px;
-  background:radial-gradient(circle at 80% 20%, rgba(8,189,245,0.12), transparent 40%), linear-gradient(135deg, #071827, #040e17);
-  padding:50px;
-  display:grid;
-  grid-template-columns:1.2fr 0.8fr;
-  gap:45px;
-  box-shadow:0 30px 90px rgba(0,0,0,0.35);
+    position:relative;
+
+    overflow:hidden;
+
+    border:1px solid rgba(8,189,245,.32);
+
+    border-radius:24px;
+
+    padding:45px;
+
+    display:grid;
+
+    grid-template-columns:
+        minmax(0,1.2fr)
+        minmax(290px,.8fr);
+
+    gap:45px;
+
+    background:
+        radial-gradient(
+            circle at 85% 15%,
+            rgba(8,189,245,.17),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #071b2b,
+            #06111a
+        );
+
+    box-shadow:var(--shadow-soft);
 }
-.remote h2{font-size:clamp(30px, 3.8vw, 44px);line-height:1.1;letter-spacing:-0.03em;margin:12px 0;font-weight:800}
-.remote h2 span{color:var(--cyan)}
-.remote p{color:var(--muted);max-width:620px;margin-bottom:24px;font-size:15px}
-.tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
-.tag{font-size:11px;color:var(--muted);padding:6px 12px;border:1px solid var(--line);border-radius:30px;background:rgba(255,255,255,0.02);font-weight:500}
 
-.steps{border:1px solid var(--line);border-radius:18px;padding:20px;background:rgba(255,255,255,0.015);display:flex;flex-direction:column;gap:14px}
-.step{display:flex;gap:16px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
-.step:last-child{border:0;padding-bottom:0}
-.num{width:32px;height:32px;display:grid;place-items:center;border-radius:10px;background:rgba(8,189,245,0.1);color:var(--cyan);font-size:12px;font-weight:900;flex:none;border:1px solid rgba(8,189,245,0.2)}
-.step b{font-size:13px;font-weight:700}
-.step small{display:block;color:var(--muted);font-size:11px}
+.remote:before{
+    content:"REMOTE";
 
-.services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    position:absolute;
+
+    right:-20px;
+    bottom:-35px;
+
+    font-size:110px;
+
+    font-weight:1000;
+
+    letter-spacing:-.08em;
+
+    color:rgba(8,189,245,.025);
+
+    pointer-events:none;
+}
+
+.remote h2{
+    font-size:clamp(32px,4vw,48px);
+
+    line-height:1.03;
+
+    letter-spacing:-.05em;
+
+    margin:12px 0 15px;
+}
+
+.remote h2 span{
+    color:var(--cyan);
+}
+
+.remote p{
+    max-width:650px;
+
+    color:var(--muted);
+
+    margin-bottom:20px;
+}
+
+.tags{
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:7px;
+
+    margin-bottom:25px;
+}
+
+.tag{
+    padding:6px 10px;
+
+    border:1px solid var(--line);
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.025);
+
+    color:#b8cbd7;
+
+    font-size:10px;
+}
+
+/* STEPS */
+
+.steps{
+    position:relative;
+    z-index:2;
+
+    border:1px solid var(--line);
+
+    border-radius:17px;
+
+    padding:13px 19px;
+
+    background:rgba(255,255,255,.025);
+
+    backdrop-filter:blur(8px);
+}
+
+.step{
+    display:flex;
+
+    gap:13px;
+
+    padding:14px 0;
+
+    border-bottom:1px solid var(--line);
+}
+
+.step:last-child{
+    border-bottom:0;
+}
+
+.num{
+    width:30px;
+    height:30px;
+
+    display:grid;
+    place-items:center;
+
+    flex:none;
+
+    border-radius:9px;
+
+    background:rgba(8,189,245,.1);
+
+    color:var(--cyan);
+
+    font-size:10px;
+    font-weight:900;
+}
+
+.step b{
+    display:block;
+
+    font-size:13px;
+}
+
+.step small{
+    display:block;
+
+    color:var(--muted);
+
+    font-size:10px;
+
+    margin-top:1px;
+}
+
+/* =========================================================
+   SERVICES
+   ========================================================= */
+
+.services{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:15px;
+}
+
 .card{
-  padding:32px 28px;
-  border:1px solid var(--line);
-  border-radius:20px;
-  background:linear-gradient(180deg, rgba(9, 24, 39, 0.85), rgba(4, 13, 22, 0.9));
-  transition:var(--transition);
-  position:relative;
-  overflow:hidden;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-}
-.card::before{
-  content:'';
-  position:absolute;
-  top:0;left:0;right:0;height:2px;
-  background:linear-gradient(90deg, transparent, var(--cyan), transparent);
-  opacity:0;
-  transition:var(--transition);
-}
-.card:hover{
-  transform:translateY(-6px);
-  border-color:var(--line-hover);
-  box-shadow:0 20px 40px rgba(0,0,0,0.4), 0 0 20px rgba(8,189,245,0.08);
-}
-.card:hover::before{opacity:1}
-.icon{
-  width:48px;height:48px;
-  display:grid;place-items:center;
-  border:1px solid rgba(8,189,245,0.3);
-  border-radius:12px;
-  color:var(--cyan);
-  background:rgba(8,189,245,0.08);
-  margin-bottom:20px;
-  transition:var(--transition);
-}
-.card:hover .icon{
-  background:var(--cyan);
-  color:#02101a;
-  box-shadow:0 0 20px rgba(8,189,245,0.4);
-}
-.icon svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.card h3{font-size:18px;margin-bottom:8px;font-weight:700;letter-spacing:-0.01em}
-.card p{color:var(--muted);font-size:13px;line-height:1.6;margin-bottom:20px}
-.card-action{font-size:12px;color:var(--cyan);font-weight:700;display:inline-flex;align-items:center;gap:4px;transition:var(--transition)}
-.card:hover .card-action{gap:8px}
+    position:relative;
 
-/* Testimonios Nuevos */
-.testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.testimonial-card{
-  padding:28px;
-  border:1px solid var(--line);
-  border-radius:20px;
-  background:rgba(255,255,255,0.015);
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
+    min-height:190px;
+
+    padding:24px;
+
+    overflow:hidden;
+
+    border:1px solid var(--line);
+
+    border-radius:17px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(11,29,44,.85),
+            rgba(5,15,24,.9)
+        );
+
+    transition:
+        transform .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
 }
-.stars{color:#f59e0b;font-size:14px;margin-bottom:12px;letter-spacing:2px}
-.testimonial-card p{color:var(--muted);font-size:13px;font-style:italic;margin-bottom:16px;line-height:1.6}
-.client b{display:block;font-size:13px;color:var(--white);font-weight:700}
-.client small{color:var(--muted);font-size:11px}
+
+.card:after{
+    content:"";
+
+    position:absolute;
+
+    width:100px;
+    height:100px;
+
+    right:-45px;
+    bottom:-50px;
+
+    border-radius:50%;
+
+    background:rgba(8,189,245,.07);
+
+    filter:blur(5px);
+
+    transition:.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+
+    border-color:rgba(8,189,245,.42);
+
+    box-shadow:
+        0 18px 45px rgba(0,0,0,.3);
+}
+
+.card:hover:after{
+    transform:scale(1.5);
+}
+
+.icon{
+    width:43px;
+    height:43px;
+
+    display:grid;
+    place-items:center;
+
+    margin-bottom:18px;
+
+    border:1px solid rgba(8,189,245,.28);
+
+    border-radius:11px;
+
+    color:var(--cyan);
+
+    background:rgba(8,189,245,.065);
+}
+
+.icon svg{
+    width:21px;
+    height:21px;
+
+    fill:none;
+
+    stroke:currentColor;
+
+    stroke-width:1.7;
+
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+
+.card h3{
+    font-size:16px;
+
+    margin-bottom:6px;
+}
+
+.card p{
+    color:var(--muted);
+
+    font-size:12px;
+}
+
+/* =========================================================
+   BUY
+   ========================================================= */
 
 .buy{
-  display:grid;
-  grid-template-columns:1fr 1.1fr;
-  gap:50px;
-  align-items:center;
-  padding:55px;
-  border-radius:24px;
-  border:1px solid var(--line);
-  background:radial-gradient(circle at 10% 50%, rgba(8,189,245,0.08), transparent 50%), var(--panel-solid);
-  box-shadow:0 25px 70px rgba(0,0,0,0.3);
-}
-.buy h2{font-size:clamp(30px, 3.8vw, 44px);line-height:1.1;letter-spacing:-0.03em;margin:10px 0 16px;font-weight:800}
-.buy h2 span{color:var(--cyan)}
-.buy p{color:var(--muted);margin-bottom:24px;font-size:15px}
-.points{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.point{padding:18px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,0.02);transition:var(--transition)}
-.point:hover{border-color:rgba(8,189,245,0.3);background:rgba(8,189,245,0.03)}
-.point b{font-size:13px;display:block;margin-bottom:4px;font-weight:700}
-.point small{font-size:11px;color:var(--muted);line-height:1.4}
+    display:grid;
 
-.about{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.about h2{font-size:clamp(30px, 3.8vw, 46px);line-height:1.1;letter-spacing:-0.03em;margin:10px 0 20px;font-weight:800}
-.about h2 span{color:var(--cyan)}
-.about p{color:var(--muted);font-size:15px;margin-bottom:16px;line-height:1.7}
-.features{display:grid;gap:12px}
-.feature{display:flex;gap:16px;align-items:flex-start;padding:18px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,0.015);transition:var(--transition)}
-.feature:hover{border-color:rgba(8,189,245,0.3);background:rgba(255,255,255,0.025)}
-.check{width:28px;height:28px;display:grid;place-items:center;border-radius:8px;color:var(--cyan);background:rgba(8,189,245,0.1);flex:none;font-weight:900;border:1px solid rgba(8,189,245,0.2)}
-.feature b{font-size:13px;display:block;margin-bottom:2px;font-weight:700}
-.feature small{display:block;color:var(--muted);font-size:11px}
+    grid-template-columns:
+        minmax(0,.95fr)
+        minmax(0,1.05fr);
+
+    gap:50px;
+
+    align-items:center;
+
+    padding:48px;
+
+    border:1px solid var(--line);
+
+    border-radius:24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(8,189,245,.08),
+            rgba(255,255,255,.015)
+        ),
+        var(--panel);
+
+    box-shadow:var(--shadow-soft);
+}
+
+.buy h2{
+    font-size:clamp(32px,4vw,48px);
+
+    line-height:1.03;
+
+    letter-spacing:-.05em;
+
+    margin:11px 0 15px;
+}
+
+.buy h2 span{
+    color:var(--cyan);
+}
+
+.buy p{
+    color:var(--muted);
+
+    margin-bottom:23px;
+}
+
+.points{
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:11px;
+}
+
+.point{
+    padding:17px;
+
+    border:1px solid var(--line);
+
+    border-radius:13px;
+
+    background:rgba(255,255,255,.025);
+
+    transition:.2s ease;
+}
+
+.point:hover{
+    border-color:rgba(8,189,245,.3);
+
+    background:rgba(8,189,245,.035);
+}
+
+.point b{
+    display:block;
+
+    font-size:12px;
+
+    margin-bottom:2px;
+}
+
+.point small{
+    color:var(--muted);
+
+    font-size:10px;
+}
+
+/* =========================================================
+   ABOUT
+   ========================================================= */
+
+.about{
+    display:grid;
+
+    grid-template-columns:
+        minmax(0,1fr)
+        minmax(0,1fr);
+
+    gap:75px;
+
+    align-items:center;
+}
+
+.about h2{
+    font-size:clamp(32px,4vw,50px);
+
+    line-height:1.03;
+
+    letter-spacing:-.05em;
+
+    margin:11px 0 18px;
+}
+
+.about h2 span{
+    color:var(--cyan);
+}
+
+.about p{
+    color:var(--muted);
+
+    font-size:14px;
+
+    margin-bottom:15px;
+
+    max-width:590px;
+}
+
+.features{
+    display:grid;
+
+    gap:10px;
+}
+
+.feature{
+    display:flex;
+
+    gap:13px;
+
+    padding:16px;
+
+    border:1px solid var(--line);
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.025);
+
+    transition:.2s ease;
+}
+
+.feature:hover{
+    transform:translateX(4px);
+
+    border-color:rgba(8,189,245,.3);
+}
+
+.check{
+    width:28px;
+    height:28px;
+
+    display:grid;
+    place-items:center;
+
+    flex:none;
+
+    border-radius:8px;
+
+    color:var(--cyan);
+
+    background:rgba(8,189,245,.09);
+
+    font-weight:900;
+}
+
+.feature b{
+    display:block;
+
+    font-size:12px;
+}
+
+.feature small{
+    display:block;
+
+    color:var(--muted);
+
+    font-size:10px;
+}
+
+/* =========================================================
+   CTA
+   ========================================================= */
 
 .cta{
-  padding:90px 0;
-  text-align:center;
-  border-top:1px solid var(--line);
-  border-bottom:1px solid var(--line);
-  background:radial-gradient(circle at 50% 100%, rgba(8,189,245,0.15), transparent 50%), #040e18;
-}
-.cta h2{font-size:clamp(34px, 4.5vw, 52px);line-height:1.1;letter-spacing:-0.03em;margin:12px 0;font-weight:900}
-.cta p{max-width:600px;margin:0 auto 28px;color:var(--muted);font-size:16px}
+    overflow:hidden;
 
-.contact{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    padding:90px 0;
+
+    text-align:center;
+
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+
+    background:
+        radial-gradient(
+            circle at 50% 100%,
+            rgba(8,189,245,.2),
+            transparent 42%
+        ),
+        linear-gradient(
+            180deg,
+            #06131f,
+            #04101a
+        );
+}
+
+.cta h2{
+    font-size:clamp(36px,5vw,58px);
+
+    line-height:1.02;
+
+    letter-spacing:-.055em;
+
+    margin:13px 0;
+}
+
+.cta p{
+    max-width:620px;
+
+    margin:0 auto 25px;
+
+    color:var(--muted);
+
+    font-size:14px;
+}
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+.contact{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:15px;
+}
+
 .contact a{
-  padding:32px 24px;
-  text-align:center;
-  border:1px solid var(--line);
-  border-radius:20px;
-  background:rgba(255,255,255,0.015);
-  transition:var(--transition);
-}
-.contact a:hover{
-  border-color:var(--cyan);
-  transform:translateY(-5px);
-  background:rgba(8,189,245,0.03);
-  box-shadow:0 15px 35px rgba(0,0,0,0.3);
-}
-.contact .icon{margin:0 auto 16px}
-.contact b{font-size:15px;display:block;margin-bottom:4px;font-weight:700}
-.contact small{display:block;color:var(--muted);font-size:12px}
+    padding:26px;
 
-footer{border-top:1px solid var(--line);padding:35px 0;color:var(--muted);font-size:11px}
-.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}
-.foot b{color:var(--white);font-weight:700}
-.foot span{color:var(--cyan)}
+    text-align:center;
+
+    border:1px solid var(--line);
+
+    border-radius:17px;
+
+    background:rgba(255,255,255,.025);
+
+    transition:.22s ease;
+}
+
+.contact a:hover{
+    transform:translateY(-5px);
+
+    border-color:rgba(8,189,245,.38);
+
+    background:rgba(8,189,245,.035);
+
+    box-shadow:var(--shadow-soft);
+}
+
+.contact .icon{
+    margin:0 auto 13px;
+}
+
+.contact b{
+    font-size:14px;
+}
+
+.contact small{
+    display:block;
+
+    color:var(--muted);
+
+    font-size:11px;
+
+    margin-top:2px;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer{
+    padding:27px 0;
+
+    border-top:1px solid var(--line);
+
+    color:#61798b;
+
+    font-size:10px;
+}
+
+.foot{
+    display:flex;
+
+    align-items:center;
+    justify-content:space-between;
+
+    gap:20px;
+}
+
+.foot b{
+    color:#b8cbd7;
+}
+
+.foot span{
+    color:var(--cyan);
+}
+
+/* =========================================================
+   FLOAT WHATSAPP
+   ========================================================= */
 
 .float-wa{
-  position:fixed;
-  right:24px;
-  bottom:24px;
-  z-index:99;
-  width:60px;
-  height:60px;
-  border-radius:50%;
-  display:grid;
-  place-items:center;
-  background:var(--green);
-  color:#fff;
-  box-shadow:0 10px 30px rgba(37,211,102,0.4);
-  font-size:28px;
-  transition:var(--transition);
-  animation: pulseWa 3s infinite;
+    position:fixed;
+
+    right:20px;
+    bottom:20px;
+
+    z-index:90;
+
+    width:59px;
+    height:59px;
+
+    display:grid;
+    place-items:center;
+
+    border-radius:50%;
+
+    background:var(--green);
+
+    color:#fff;
+
+    box-shadow:
+        0 12px 35px rgba(37,211,102,.3);
+
+    transition:.2s ease;
+
+    animation:
+        whatsappPulse 3s infinite;
 }
+
 .float-wa:hover{
-  transform:scale(1.08) translateY(-3px);
-  box-shadow:0 15px 40px rgba(37,211,102,0.6);
+    transform:scale(1.08);
+
+    box-shadow:
+        0 15px 45px rgba(37,211,102,.42);
 }
 
-@keyframes pulseWa {
-  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
-  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+.float-wa svg{
+    width:27px;
+    height:27px;
+
+    fill:none;
+
+    stroke:#fff;
+
+    stroke-width:1.8;
+
+    stroke-linecap:round;
+    stroke-linejoin:round;
 }
 
-@media(max-width:992px){
-  .nav{
-    position:absolute;
-    top:80px;left:0;right:0;
-    display:none;
-    flex-direction:column;
-    align-items:stretch;
-    gap:0;
-    padding:16px 24px 24px;
-    background:rgba(3, 11, 20, 0.98);
-    backdrop-filter:blur(20px);
-    border-bottom:1px solid var(--line);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-  }
-  .nav.open{display:flex; animation: slideDown 0.3s ease forwards;}
-  .nav a{padding:12px 0; border-bottom:1px solid rgba(255,255,255,0.04); font-size:15px;}
-  .nav a.wa{margin-top:10px; text-align:center; border:1px solid rgba(8,189,245,0.4);}
-  .menu{display:block}
-  .hero-grid, .remote, .buy, .about{grid-template-columns:1fr; gap:40px}
-  .visual{min-height:380px; order:-1}
-  .services, .testimonials, .contact{grid-template-columns:1fr}
-  .hero{padding-top:120px}
+@keyframes whatsappPulse{
+
+    0%,100%{
+        box-shadow:
+            0 12px 35px rgba(37,211,102,.28);
+    }
+
+    50%{
+        box-shadow:
+            0 12px 45px rgba(37,211,102,.48);
+    }
 }
 
-@keyframes slideDown {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
+/* =========================================================
+   REVEAL ANIMATION
+   ========================================================= */
+
+.reveal{
+    opacity:0;
+
+    transform:translateY(18px);
+
+    transition:
+        opacity .7s ease,
+        transform .7s ease;
 }
 
-@media(max-width:600px){
-  .wrap{width:calc(100% - 28px)}
-  section{padding:75px 0}
-  .hero{padding:110px 0 60px}
-  .visual{min-height:300px}
-  .monitor{left:6%; top:15%; width:56%; height:44%}
-  .case{right:4%; top:13%; width:32%; height:67%}
-  .keyboard{left:8%; width:58%}
-  .hero-logo{left:5%; bottom:7%; width:75px}
-  .badge{font-size:9px; padding:8px 12px}
-  .badge strong{font-size:11px}
-  .b2{right:3%; top:6%}
-  .b1{right:3%; bottom:8%}
-  .lead{font-size:15px}
-  .actions .btn{width:100%}
-  .trust{gap:12px; flex-direction:column}
-  .remote, .buy{padding:25px 20px}
-  .points{grid-template-columns:1fr}
-  .foot{flex-direction:column; text-align:center; gap:12px}
-  .float-wa{width:52px; height:52px; font-size:24px; right:18px; bottom:18px}
+.reveal.visible{
+    opacity:1;
+
+    transform:translateY(0);
 }
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+:focus-visible{
+    outline:2px solid var(--cyan);
+
+    outline-offset:4px;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media(max-width:1000px){
+
+    .nav{
+        gap:15px;
+    }
+
+    .hero-grid{
+        grid-template-columns:1fr;
+
+        gap:45px;
+    }
+
+    .hero-copy{
+        text-align:center;
+    }
+
+    .hero-copy .lead{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .actions,
+    .trust{
+        justify-content:center;
+    }
+
+    .visual{
+        min-height:470px;
+    }
+
+    .remote,
+    .buy,
+    .about{
+        grid-template-columns:1fr;
+
+        gap:35px;
+    }
+
+    .services{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .about{
+        gap:40px;
+    }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media(max-width:720px){
+
+    .wrap{
+        width:calc(100% - 26px);
+    }
+
+    header{
+        background:rgba(2,8,14,.9);
+    }
+
+    nav{
+        height:68px;
+    }
+
+    .brand img{
+        width:39px;
+        height:39px;
+    }
+
+    .brand b{
+        font-size:19px;
+    }
+
+    .menu{
+        display:block;
+    }
+
+    .nav{
+        position:absolute;
+
+        top:68px;
+        left:0;
+        right:0;
+
+        display:none;
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+        gap:0;
+
+        padding:10px 13px 16px;
+
+        background:rgba(2,9,15,.98);
+
+        border-bottom:1px solid var(--line);
+
+        box-shadow:
+            0 20px 40px rgba(0,0,0,.3);
+    }
+
+    .nav.open{
+        display:flex;
+    }
+
+    .nav a{
+        display:block;
+
+        padding:12px 8px;
+
+        font-size:13px;
+    }
+
+    .nav a:not(.wa):after{
+        display:none;
+    }
+
+    .nav .wa{
+        margin-top:5px;
+
+        text-align:center;
+    }
+
+    .hero{
+        min-height:auto;
+
+        padding:108px 0 60px;
+    }
+
+    .hero-grid{
+        gap:30px;
+    }
+
+    .hero-copy{
+        text-align:left;
+    }
+
+    .actions,
+    .trust{
+        justify-content:flex-start;
+    }
+
+    h1{
+        font-size:clamp(45px,13vw,60px);
+
+        letter-spacing:-.06em;
+    }
+
+    .lead{
+        font-size:15px;
+    }
+
+    .actions{
+        flex-direction:column;
+    }
+
+    .actions .btn{
+        width:100%;
+    }
+
+    .trust{
+        flex-direction:column;
+
+        gap:8px;
+    }
+
+    .visual{
+        min-height:325px;
+
+        border-radius:20px;
+    }
+
+    .pc-art{
+        left:4%;
+        right:2%;
+        top:13%;
+        bottom:4%;
+    }
+
+    .monitor{
+        border-width:5px;
+    }
+
+    .case:before,
+    .case:after{
+        width:31px;
+        height:31px;
+
+        border-width:4px;
+    }
+
+    .hero-logo{
+        width:70px;
+
+        left:5%;
+        bottom:7%;
+    }
+
+    .badge{
+        padding:8px 10px;
+
+        font-size:8px;
+    }
+
+    .badge strong{
+        font-size:10px;
+    }
+
+    .b1{
+        right:3%;
+        bottom:7%;
+    }
+
+    .b2{
+        right:3%;
+        top:5%;
+    }
+
+    section{
+        padding:72px 0;
+    }
+
+    .section-title{
+        margin-bottom:32px;
+    }
+
+    .section-title h2{
+        font-size:34px;
+    }
+
+    .remote{
+        padding:26px 19px;
+
+        border-radius:19px;
+    }
+
+    .remote h2{
+        font-size:35px;
+    }
+
+    .remote .btn{
+        width:100%;
+    }
+
+    .services{
+        grid-template-columns:1fr;
+    }
+
+    .card{
+        min-height:165px;
+    }
+
+    .buy{
+        padding:27px 19px;
+
+        border-radius:19px;
+    }
+
+    .buy h2{
+        font-size:36px;
+    }
+
+    .points{
+        grid-template-columns:1fr;
+    }
+
+    .about{
+        gap:30px;
+    }
+
+    .about h2{
+        font-size:36px;
+    }
+
+    .contact{
+        grid-template-columns:1fr;
+    }
+
+    .cta{
+        padding:72px 0;
+    }
+
+    .cta h2{
+        font-size:40px;
+    }
+
+    .foot{
+        flex-direction:column;
+
+        text-align:center;
+    }
+
+    .float-wa{
+        right:15px;
+        bottom:15px;
+
+        width:55px;
+        height:55px;
+    }
+}
+
+/* =========================================================
+   REDUCE MOTION
+   ========================================================= */
+
+@media(prefers-reduced-motion:reduce){
+
+    html{
+        scroll-behavior:auto;
+    }
+
+    *,
+    *:before,
+    *:after{
+        animation:none !important;
+
+        transition:none !important;
+    }
+
+    .reveal{
+        opacity:1;
+
+        transform:none;
+    }
+}
+
 </style>
 </head>
+
 <body>
 
+<!-- =======================================================
+     HEADER
+======================================================= -->
+
 <header>
-  <div class="wrap">
-    <nav>
-      <a class="brand" href="#inicio">
-        <img src="logo-optipc.jpg" alt="OptiPC Logotipo">
-        <b>Opti<span>PC</span></b>
-      </a>
-      <button class="menu" id="menu" aria-label="Abrir Menú de navegación">☰</button>
-      <ul class="nav" id="nav">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#remoto">Instalación Remota</a></li>
-        <li><a href="#compra">PC y Hardware</a></li>
-        <li><a href="#nosotros">Empresa</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a class="wa" href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20quiero%20hacer%20una%20consulta%20técnica" target="_blank" rel="noopener">WhatsApp</a></li>
-      </ul>
-    </nav>
-  </div>
+
+    <div class="wrap">
+
+        <nav aria-label="Navegación principal">
+
+            <a class="brand" href="#inicio" aria-label="OptiPC inicio">
+
+                <img
+                    src="logo-optipc.jpg"
+                    alt="Logo OptiPC"
+                    width="43"
+                    height="43"
+                >
+
+                <b>
+                    Opti<span>PC</span>
+                </b>
+
+            </a>
+
+            <button
+                class="menu"
+                id="menu"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="nav"
+            >
+                ☰
+            </button>
+
+            <ul class="nav" id="nav">
+
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="#servicios">Servicios</a>
+                </li>
+
+                <li>
+                    <a href="#remoto">Instalación remota</a>
+                </li>
+
+                <li>
+                    <a href="#compra">PC y Notebooks</a>
+                </li>
+
+                <li>
+                    <a href="#nosotros">Sobre nosotros</a>
+                </li>
+
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
+
+                <li>
+                    <a
+                        class="wa"
+                        href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20quiero%20hacer%20una%20consulta"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        WhatsApp
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
 </header>
 
+
 <main>
-  <section class="hero" id="inicio">
-    <div class="hero-glow"></div>
-    <div class="wrap">
-      <div class="hero-grid">
-        <div>
-          <div class="kicker">Empresa Informática en Salta</div>
-          <h1>Todo lo que tu PC necesita.<br><span>Sin vueltas.</span></h1>
-          <p class="lead">Soluciones tecnológicas avanzadas para empresas, profesionales, gamers y particulares. Soporte técnico especializado, optimización de rendimiento y servicios a distancia con estándares profesionales.</p>
-          <div class="actions">
-            <a class="btn primary" href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20quiero%20agendar%20una%20instalación%20remota" target="_blank" rel="noopener">⚡ Instalación Remota →</a>
-            <a class="btn secondary" href="#servicios">Ver Servicios →</a>
-          </div>
-          <div class="trust">
-            <span>⚡ <b>Respuesta Rápida</b></span>
-            <span>◈ <b>Soporte Certificado</b></span>
-            <span>◉ <b>Atención Profesional</b></span>
-            <span>⌖ <b>Salta, Argentina</b></span>
-          </div>
-        </div>
-        <div class="visual" aria-hidden="true">
-          <div class="monitor"></div>
-          <div class="case"></div>
-          <div class="keyboard"></div>
-          <div class="mouse"></div>
-          <img class="hero-logo" src="logo-optipc.jpg" alt="">
-          <div class="badge b2">
-            <strong>Soporte Remoto</strong>
-            Sin trasladar tu equipo
-          </div>
-          <div class="badge b1">
-            <strong>Gaming & Upgrades</strong>
-            Máximo rendimiento
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="remoto">
-    <div class="wrap">
-      <div class="remote">
-        <div>
-          <div class="kicker">Servicio Destacado</div>
-          <h2>Instalación de software<br><span>a distancia.</span></h2>
-          <p>¿Requerís software especializado pero no querés correr riesgos con la instalación? Nos conectamos mediante acceso seguro, configuramos y dejamos tu estación de trabajo lista y optimizada.</p>
-          <div class="tags">
-            <span class="tag">Arquitectura</span>
-            <span class="tag">Diseño 3D</span>
-            <span class="tag">Ingeniería</span>
-            <span class="tag">Desarrollo</span>
-            <span class="tag">Productividad</span>
-            <span class="tag">Sistemas</span>
-          </div>
-          <a class="btn primary" href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20quiero%20agendar%20una%20instalación%20remota.%20Necesito%20instalar:" target="_blank" rel="noopener">Agendar Instalación por WhatsApp →</a>
-        </div>
-        <div class="steps">
-          <div class="step">
-            <div class="num">01</div>
-            <div>
-              <b>Coordinación previa</b>
-              <small>Nos indicás qué software necesitás instalar.</small>
-            </div>
-          </div>
-          <div class="step">
-            <div class="num">02</div>
-            <div>
-              <b>Conexión segura</b>
-              <small>Establecemos acceso remoto controlado.</small>
-            </div>
-          </div>
-          <div class="step">
-            <div class="num">03</div>
-            <div>
-              <b>Configuración técnica</b>
-              <small>Instalamos y ajustamos licencias y drivers.</small>
-            </div>
-          </div>
-          <div class="step">
-            <div class="num">04</div>
-            <div>
-              <b>Verificación final</b>
-              <small>Comprobamos estabilidad y rendimiento.</small>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- =======================================================
+     HERO
+======================================================= -->
 
-  <section id="servicios">
-    <div class="wrap">
-      <div class="section-title">
-        <div class="kicker">Nuestros Servicios</div>
-        <h2>Soluciones informáticas integrales</h2>
-        <p>Infraestructura, optimización de hardware y soporte técnico con rigor profesional.</p>
-      </div>
-      <div class="services">
-        <article class="card">
-          <div>
-            <div class="icon">
-              <svg viewBox="0 0 24 24"><path d="M6 12h12M12 6v12"/></svg>
-            </div>
-            <h3>Optimización para Gaming</h3>
-            <p>Máximo frame rate (FPS), reducción de latencia, ajuste fino de sistema operativo y perfiles de alto rendimiento para competir al más alto nivel.</p>
-          </div>
-          <a class="card-action" href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20quiero%20consultar%20sobre%20la%20Optimización%20para%20Gaming" target="_blank" rel="noopener">Consultar servicio →</a>
-        </article>
-        <article class="card">
-          <div>
-            <div class="icon">
-              <svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="8"/></svg>
-            </div>
-            <h3>Upgrades de Hardware</h3>
-            <p>Potenciá tu equipo con instalación profesional de unidades NVMe, ampliación de memoria RAM y componentes de alta gama compatibles.</p>
-          </div>
-          <a class="card-action" href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20quiero%20hacer%20un%20Upgrade%20de%20Hardware" target="_blank" rel="noopener">Consultar servicio →</a>
-        </article>
-        <article class="card">
-          <div>
-            <div class="icon">
-              <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16m-7 6h7"/></svg>
-            </div>
-            <h3>Actualización de BIOS</h3>
-            <p>Optimización de estabilidad, soporte para nuevas generaciones de procesadores y máxima compatibilidad de memoria en plataformas Ryzen e Intel.</p>
-          </div>
-          <a class="card-action" href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20necesito%20actualizar%20la%20BIOS" target="_blank" rel="noopener">Consultar servicio →</a>
-        </article>
-        <article class="card">
-          <div>
-            <div class="icon">
-              <svg viewBox="0 0 24 24"><path d="M6 4h12M5 8h14M4 12h16M6 16h12M8 20h8"/></svg>
-            </div>
-            <h3>Mantenimiento Preventivo</h3>
-            <p>Limpieza profunda de componentes, recambio de pasta térmica de alta gama y gestión térmica para garantizar la vida útil del equipo.</p>
-          </div>
-          <a class="card-action" href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20quiero%20coordinar%20mantenimiento%20preventivo" target="_blank" rel="noopener">Consultar servicio →</a>
-        </article>
-        <article class="card">
-          <div>
-            <div class="icon">
-              <svg viewBox="0 0 24 24"><path d="M3 5h18v14H3z"/><path d="M7 9h10M7 13h6"/></svg>
-            </div>
-            <h3>Asesoramiento Tecnológico</h3>
-            <p>Te orientamos en la selección de equipos y componentes equilibrados según tus requerimientos reales de carga de trabajo y presupuesto.</p>
-          </div>
-          <a class="card-action" href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20necesito%20asesoramiento%20tecnológico" target="_blank" rel="noopener">Consultar servicio →</a>
-        </article>
-        <article class="card">
-          <div>
-            <div class="icon">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>
-            </div>
-            <h3>Diagnóstico y Reparación</h3>
-            <p>Detección precisa de fallas en hardware y software con soluciones orientadas a la durabilidad y correcto funcionamiento.</p>
-          </div>
-          <a class="card-action" href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20necesito%20un%20diagnóstico%20técnico" target="_blank" rel="noopener">Consultar servicio →</a>
-        </article>
-      </div>
-    </div>
-  </section>
+<section class="hero" id="inicio">
 
-  <!-- Nueva Sección de Reseñas de Clientes -->
-  <section style="background:rgba(255,255,255,0.004)">
     <div class="wrap">
-      <div class="section-title">
-        <div class="kicker">Confianza y Experiencia</div>
-        <h2>Lo que dicen nuestros clientes</h2>
-        <p>Atención profesional y resultados comprobados en cada equipo.</p>
-      </div>
-      <div class="testimonials">
-        <div class="testimonial-card">
-          <div>
-            <div class="stars">★★★★★</div>
-            <p>"Llevé mi PC para optimización gaming y un cambio de pasta térmica. Vuela y bajó la temperatura un montón. Excelente atención."</p>
-          </div>
-          <div class="client">
-            <b>Franco G.</b>
-            <small>Jugador de CS2 / Salta</small>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div>
-            <div class="stars">★★★★★</div>
-            <p>"Me instalaron software de arquitectura a distancia sin que tenga que mover la PC del estudio. Súper rápido y seguro."</p>
-          </div>
-          <div class="client">
-            <b>Arq. Lucía M.</b>
-            <small>Estudio de Arquitectura</small>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div>
-            <div class="stars">★★★★★</div>
-            <p>"Me asesoraron perfecto para armar componentes equilibrados sin gastar de más. Muy honestos y profesionales."</p>
-          </div>
-          <div class="client">
-            <b>Matías R.</b>
-            <small>Cliente particular</small>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="compra">
-    <div class="wrap">
-      <div class="buy">
-        <div>
-          <div class="kicker">Equipamiento y Hardware</div>
-          <h2>Invertí inteligentemente.<br><span>Pagá por lo que rinde.</span></h2>
-          <p>Evitá comprar componentes incompatibles o sobredimensionados. Analizamos tus necesidades para sugerirte configuraciones con excelente relación precio/rendimiento y proyección de futuras mejoras.</p>
-          <a class="btn primary" href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20necesito%20asesoramiento%20para%20adquirir%20hardware%20o%20PC" target="_blank" rel="noopener">Solicitar Asesoramiento →</a>
-        </div>
-        <div class="points">
-          <div class="point">
-            <b>Enfoque en tu uso real</b>
-            <small>Gaming competitivo, estaciones de trabajo o uso administrativo.</small>
-          </div>
-          <div class="point">
-            <b>Optimización de presupuesto</b>
-            <small>Priorizamos los componentes que realmente generan impacto en velocidad.</small>
-          </div>
-          <div class="point">
-            <b>Compatibilidad garantizada</b>
-            <small>Cero margen de error en fuentes, memorias y placas base.</small>
-          </div>
-          <div class="point">
-            <b>Visión de futuro (Upgrades)</b>
-            <small>Estructuras preparadas para ampliaciones a mediano plazo.</small>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        <div class="hero-grid">
 
-  <section id="nosotros">
-    <div class="wrap">
-      <div class="about">
-        <div>
-          <div class="kicker">Sobre OptiPC</div>
-          <h2>Ingeniería técnica y soporte<br><span>sin complicaciones.</span></h2>
-          <p>Entendemos que la tecnología debe ser una herramienta eficiente para tus proyectos y no un problema diario.</p>
-          <p>En OptiPC combinamos experiencia técnica y procesos transparentes para brindarte soluciones directas, profesionales y adaptadas al entorno actual.</p>
-          <a class="btn secondary" href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20quiero%20consultar%20sobre%20sus%20servicios" target="_blank" rel="noopener">Contactar con un técnico →</a>
+            <div class="hero-copy reveal">
+
+                <div class="kicker">
+                    Informática en Salta
+                </div>
+
+                <h1>
+                    Todo lo que tu PC necesita.
+                    <br>
+                    <span>Sin vueltas.</span>
+                </h1>
+
+                <p class="lead">
+                    Soporte, instalación de software, mantenimiento,
+                    upgrades, venta de equipos y asesoramiento.
+                    Soluciones claras para tu PC, tu trabajo y tu día a día.
+                </p>
+
+                <div class="actions">
+
+                    <a
+                        class="btn primary"
+                        href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20quiero%20agendar%20una%20instalaci%C3%B3n%20remota"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        ⚡ Instalación remota →
+                    </a>
+
+                    <a
+                        class="btn secondary"
+                        href="#servicios"
+                    >
+                        Ver servicios →
+                    </a>
+
+                </div>
+
+                <div class="trust">
+
+                    <span>
+                        ⚡ <b>Rápido</b>
+                    </span>
+
+                    <span>
+                        ◈ <b>Atención personalizada</b>
+                    </span>
+
+                    <span>
+                        ◉ <b>Soporte real</b>
+                    </span>
+
+                    <span>
+                        ⌖ <b>Salta, Argentina</b>
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="visual reveal" aria-label="Computadora y servicios OptiPC">
+
+                <div class="tech-grid"></div>
+
+                <div class="pc-art">
+
+                    <div class="monitor"></div>
+
+                    <div class="case">
+
+                        <div class="case-glow"></div>
+
+                    </div>
+
+                    <div class="keyboard"></div>
+
+                    <div class="mouse"></div>
+
+                </div>
+
+                <img
+                    class="hero-logo"
+                    src="logo-optipc.jpg"
+                    alt="OptiPC Informática"
+                >
+
+                <div class="badge b2">
+
+                    <strong>Soporte remoto</strong>
+
+                    Sin trasladar tu PC
+
+                </div>
+
+                <div class="badge b1">
+
+                    <strong>PC + Upgrades</strong>
+
+                    Rendimiento a tu medida
+
+                </div>
+
+            </div>
+
         </div>
-        <div class="features">
-          <div class="feature">
-            <div class="check">✓</div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     INSTALACIÓN REMOTA
+======================================================= -->
+
+<section id="remoto">
+
+    <div class="wrap">
+
+        <div class="remote reveal">
+
             <div>
-              <b>Atención técnica personalizada</b>
-              <small>Diagnósticos claros y explicados sin tecnicismos innecesarios.</small>
+
+                <div class="kicker">
+                    Servicio destacado
+                </div>
+
+                <h2>
+                    Instalación de software
+                    <br>
+                    <span>a distancia.</span>
+                </h2>
+
+                <p>
+                    ¿Necesitás instalar un programa pero no sabés cómo?
+                    Nos conectamos remotamente, instalamos y configuramos
+                    el software y dejamos tu PC lista para usar.
+                </p>
+
+                <div class="tags">
+
+                    <span class="tag">Arquitectura</span>
+                    <span class="tag">Diseño</span>
+                    <span class="tag">Ingeniería</span>
+                    <span class="tag">Trabajo</span>
+                    <span class="tag">Estudio</span>
+                    <span class="tag">Configuración</span>
+
+                </div>
+
+                <a
+                    class="btn primary"
+                    href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20quiero%20agendar%20una%20instalaci%C3%B3n%20remota.%20Necesito%20instalar:%20"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Agendar por WhatsApp →
+                </a>
+
             </div>
-          </div>
-          <div class="feature">
-            <div class="check">✓</div>
-            <div>
-              <b>Modalidad híbrida (Remota / Local)</b>
-              <small>Soluciones inmediatas a distancia o taller especializado en Salta.</small>
+
+
+            <div class="steps">
+
+                <div class="step">
+
+                    <div class="num">
+                        01
+                    </div>
+
+                    <div>
+                        <b>Coordinamos</b>
+
+                        <small>
+                            Nos contás qué necesitás.
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="num">
+                        02
+                    </div>
+
+                    <div>
+                        <b>Nos conectamos</b>
+
+                        <small>
+                            Trabajamos remotamente.
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="num">
+                        03
+                    </div>
+
+                    <div>
+                        <b>Instalamos</b>
+
+                        <small>
+                            Configuramos el software.
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="num">
+                        04
+                    </div>
+
+                    <div>
+                        <b>Listo para usar</b>
+
+                        <small>
+                            Verificamos que funcione.
+                        </small>
+                    </div>
+
+                </div>
+
             </div>
-          </div>
-          <div class="feature">
-            <div class="check">✓</div>
-            <div>
-              <b>Rendimiento garantizado</b>
-              <small>Componentes y configuraciones probadas bajo exigencia.</small>
-            </div>
-          </div>
-          <div class="feature">
-            <div class="check">✓</div>
-            <div>
-              <b>Base en Salta, Argentina</b>
-              <small>Cobertura local presencial y asistencia técnica regional.</small>
-            </div>
-          </div>
+
         </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="cta">
-    <div class="wrap">
-      <div class="kicker">¿Listo para mejorar tu equipo?</div>
-      <h2>Llevá el rendimiento de tu PC al límite.</h2>
-      <p>Agendá una consulta técnica o coordiná una instalación remota en pocos minutos.</p>
-      <a class="btn primary" href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20quiero%20coordinar%20un%20servicio%20técnico" target="_blank" rel="noopener">Iniciar Consulta por WhatsApp →</a>
     </div>
-  </section>
 
-  <section id="contacto">
+</section>
+
+
+<!-- =======================================================
+     SERVICIOS
+======================================================= -->
+
+<section id="servicios">
+
     <div class="wrap">
-      <div class="section-title">
-        <div class="kicker">Contacto Directo</div>
-        <h2>Hablemos de tecnología.</h2>
-        <p>Estamos ubicados en Salta capital y atendemos requerimientos a distancia.</p>
-      </div>
-      <div class="contact">
-        <a href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20quiero%20hacer%20una%20consulta%20técnica" target="_blank" rel="noopener">
-          <div class="icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-          </div>
-          <b>WhatsApp Oficial</b>
-          <small>Atención de consultas y presupuestos</small>
+
+        <div class="section-title reveal">
+
+            <div class="kicker">
+                Nuestros servicios
+            </div>
+
+            <h2>
+                Soluciones informáticas completas
+            </h2>
+
+            <p>
+                Para particulares, profesionales, trabajo,
+                estudio y gaming.
+            </p>
+
+        </div>
+
+
+        <div class="services">
+
+
+            <article class="card reveal">
+
+                <div class="icon">
+
+                    <svg viewBox="0 0 24 24">
+                        <rect x="3" y="4" width="18" height="13" rx="2"/>
+                        <path d="M8 21h8M12 17v4"/>
+                    </svg>
+
+                </div>
+
+                <h3>
+                    Instalación remota
+                </h3>
+
+                <p>
+                    Software, drivers y configuraciones
+                    para todo tipo de uso.
+                </p>
+
+            </article>
+
+
+            <article class="card reveal">
+
+                <div class="icon">
+
+                    <svg viewBox="0 0 24 24">
+                        <path d="M3 5h18v14H3z"/>
+                        <path d="M7 9h10M7 13h6"/>
+                    </svg>
+
+                </div>
+
+                <h3>
+                    Asesoramiento de compra
+                </h3>
+
+                <p>
+                    Te ayudamos a elegir la PC o notebook
+                    ideal para vos.
+                </p>
+
+            </article>
+
+
+            <article class="card reveal">
+
+                <div class="icon">
+
+                    <svg viewBox="0 0 24 24">
+                        <rect x="3" y="4" width="18" height="13" rx="2"/>
+                        <path d="M8 21h8M12 17v4"/>
+                    </svg>
+
+                </div>
+
+                <h3>
+                    PC y Notebooks
+                </h3>
+
+                <p>
+                    Equipos listos para gaming, trabajo,
+                    estudio y uso general.
+                </p>
+
+            </article>
+
+
+            <article class="card reveal">
+
+                <div class="icon">
+
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6 4h12M5 8h14M4 12h16M6 16h12M8 20h8"/>
+                    </svg>
+
+                </div>
+
+                <h3>
+                    Limpieza y mantenimiento
+                </h3>
+
+                <p>
+                    Mejor rendimiento y mayor vida útil
+                    de tu equipo.
+                </p>
+
+            </article>
+
+
+            <article class="card reveal">
+
+                <div class="icon">
+
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 3v18M3 12h18"/>
+                        <circle cx="12" cy="12" r="8"/>
+                    </svg>
+
+                </div>
+
+                <h3>
+                    Upgrade
+                </h3>
+
+                <p>
+                    Más velocidad y rendimiento con RAM,
+                    SSD, NVMe y más.
+                </p>
+
+            </article>
+
+
+            <article class="card reveal">
+
+                <div class="icon">
+
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="8"/>
+                        <path d="M12 8v4l3 2"/>
+                    </svg>
+
+                </div>
+
+                <h3>
+                    Diagnóstico
+                </h3>
+
+                <p>
+                    Detectamos y solucionamos problemas
+                    de hardware y software.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     PC Y NOTEBOOKS
+======================================================= -->
+
+<section id="compra">
+
+    <div class="wrap">
+
+        <div class="buy reveal">
+
+            <div>
+
+                <div class="kicker">
+                    PC y Notebooks
+                </div>
+
+                <h2>
+                    Comprá mejor.
+                    <br>
+                    <span>Pagá por lo que necesitás.</span>
+                </h2>
+
+                <p>
+                    Te asesoramos antes de comprar para encontrar
+                    el equilibrio correcto entre rendimiento,
+                    presupuesto y posibilidad de upgrade.
+                </p>
+
+                <a
+                    class="btn primary"
+                    href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20quiero%20asesoramiento%20para%20comprar%20una%20PC"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Quiero asesoramiento →
+                </a>
+
+            </div>
+
+
+            <div class="points">
+
+                <div class="point">
+
+                    <b>
+                        Según tu uso
+                    </b>
+
+                    <small>
+                        Gaming, trabajo, estudio, diseño y más.
+                    </small>
+
+                </div>
+
+
+                <div class="point">
+
+                    <b>
+                        Según tu presupuesto
+                    </b>
+
+                    <small>
+                        Buscamos el mejor precio/rendimiento.
+                    </small>
+
+                </div>
+
+
+                <div class="point">
+
+                    <b>
+                        Componentes compatibles
+                    </b>
+
+                    <small>
+                        Evitá compras que después no sirven.
+                    </small>
+
+                </div>
+
+
+                <div class="point">
+
+                    <b>
+                        Pensando a futuro
+                    </b>
+
+                    <small>
+                        Dejamos margen para futuros upgrades.
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     NOSOTROS
+======================================================= -->
+
+<section id="nosotros">
+
+    <div class="wrap">
+
+        <div class="about">
+
+            <div class="reveal">
+
+                <div class="kicker">
+                    Sobre OptiPC
+                </div>
+
+                <h2>
+                    Tecnología sin complicaciones.
+                    <br>
+                    <span>Nosotros nos encargamos.</span>
+                </h2>
+
+                <p>
+                    Sabemos que elegir, configurar o mantener
+                    una computadora puede ser complicado.
+                </p>
+
+                <p>
+                    En OptiPC buscamos darte una solución clara,
+                    práctica y adaptada a lo que realmente necesitás.
+                </p>
+
+                <a
+                    class="btn secondary"
+                    href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20quiero%20hacer%20una%20consulta"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Conocé más →
+                </a>
+
+            </div>
+
+
+            <div class="features reveal">
+
+
+                <div class="feature">
+
+                    <div class="check">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <b>
+                            Atención personalizada
+                        </b>
+
+                        <small>
+                            Te escuchamos y buscamos la mejor solución.
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <div class="check">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <b>
+                            Servicio remoto
+                        </b>
+
+                        <small>
+                            Sin que tengas que trasladar tu equipo.
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <div class="check">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <b>
+                            Precio y rendimiento
+                        </b>
+
+                        <small>
+                            Aprovechá mejor tu presupuesto.
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <div class="check">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <b>
+                            Salta, Argentina
+                        </b>
+
+                        <small>
+                            Atención local y servicios a distancia.
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     CTA
+======================================================= -->
+
+<section class="cta">
+
+    <div class="wrap reveal">
+
+        <div class="kicker">
+            ¿Estás listo?
+        </div>
+
+        <h2>
+            ¿Necesitás instalar un software?
+        </h2>
+
+        <p>
+            Agendá una instalación remota y dejá tu PC
+            lista para usar.
+        </p>
+
+        <a
+            class="btn primary"
+            href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20quiero%20agendar%20una%20instalaci%C3%B3n%20remota"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Agendar por WhatsApp →
         </a>
-        <a href="https://instagram.com/optipcinformatica" target="_blank" rel="noopener">
-          <div class="icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </div>
-          <b>Instagram</b>
-          <small>@optipcinformatica</small>
-        </a>
-        <a href="https://www.tiktok.com/@optipcinformatica" target="_blank" rel="noopener">
-          <div class="icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
-          </div>
-          <b>TikTok</b>
-          <small>@optipcinformatica</small>
-        </a>
-      </div>
+
     </div>
-  </section>
+
+</section>
+
+
+<!-- =======================================================
+     CONTACTO
+======================================================= -->
+
+<section id="contacto">
+
+    <div class="wrap">
+
+        <div class="section-title reveal">
+
+            <div class="kicker">
+                Contacto
+            </div>
+
+            <h2>
+                Hablemos.
+            </h2>
+
+            <p>
+                Estamos en Salta y también trabajamos a distancia.
+            </p>
+
+        </div>
+
+
+        <div class="contact">
+
+
+            <a
+                class="reveal"
+                href="https://wa.me/5493876041010"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Contactar a OptiPC por WhatsApp"
+            >
+
+                <div class="icon">
+
+                    <svg viewBox="0 0 24 24">
+                        <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5Z"/>
+                        <path d="M8.5 9.2c.3-.5.5-.5.9-.5.2 0 .4 0 .5.4l.5 1.2c.1.3.1.5-.1.7l-.5.6c.6 1.1 1.5 1.9 2.7 2.4l.5-.6c.2-.2.4-.2.7-.1l1.2.6c.3.1.4.3.3.6-.1.5-.5 1-1 1.2-1 .4-2.8-.3-4.3-1.7-1.5-1.4-2.3-3.1-1.9-4.2Z"/>
+                    </svg>
+
+                </div>
+
+                <b>
+                    WhatsApp
+                </b>
+
+                <small>
+                    Consultas y presupuestos
+                </small>
+
+            </a>
+
+
+            <a
+                class="reveal"
+                href="https://instagram.com/optipcinformatica"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram de OptiPC"
+            >
+
+                <div class="icon">
+
+                    <svg viewBox="0 0 24 24">
+                        <rect x="4" y="4" width="16" height="16" rx="4"/>
+                        <circle cx="12" cy="12" r="3.5"/>
+                        <circle cx="17.2" cy="6.8" r=".8" fill="currentColor" stroke="none"/>
+                    </svg>
+
+                </div>
+
+                <b>
+                    Instagram
+                </b>
+
+                <small>
+                    @optipcinformatica
+                </small>
+
+            </a>
+
+
+            <a
+                class="reveal"
+                href="https://www.tiktok.com/@optipcinformatica"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok de OptiPC"
+            >
+
+                <div class="icon">
+
+                    <svg viewBox="0 0 24 24">
+                        <path d="M15 4v10.2a4.2 4.2 0 1 1-3.2-4.1"/>
+                        <path d="M15 4c.5 2.4 2 3.8 4.5 4.1"/>
+                    </svg>
+
+                </div>
+
+                <b>
+                    TikTok
+                </b>
+
+                <small>
+                    @optipcinformatica
+                </small>
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
 </main>
 
+
+<!-- =======================================================
+     FOOTER
+======================================================= -->
+
 <footer>
-  <div class="wrap foot">
-    <div><b>Opti<span>PC</span></b> · Soluciones Tecnológicas</div>
-    <div>© 2026 OptiPC · Salta, Argentina</div>
-  </div>
+
+    <div class="wrap foot">
+
+        <div>
+            <b>
+                Opti<span>PC</span> · Informática
+            </b>
+        </div>
+
+        <div>
+            © 2026 OptiPC · Salta, Argentina
+        </div>
+
+    </div>
+
 </footer>
 
-<a class="float-wa" href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20necesito%20soporte%20técnico" target="_blank" rel="noopener" aria-label="Abrir chat de WhatsApp">
-  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+
+<!-- =======================================================
+     FLOATING WHATSAPP
+======================================================= -->
+
+<a
+    class="float-wa"
+    href="https://wa.me/5493876041010?text=Hola%20OptiPC,%20quiero%20hacer%20una%20consulta"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar a OptiPC por WhatsApp"
+>
+
+    <svg viewBox="0 0 24 24">
+
+        <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5Z"/>
+
+        <path d="M8.5 9.2c.3-.5.5-.5.9-.5.2 0 .4 0 .5.4l.5 1.2c.1.3.1.5-.1.7l-.5.6c.6 1.1 1.5 1.9 2.7 2.4l.5-.6c.2-.2.4-.2.7-.1l1.2.6c.3.1.4.3.3.6-.1.5-.5 1-1 1.2-1 .4-2.8-.3-4.3-1.7-1.5-1.4-2.3-3.1-1.9-4.2Z"/>
+
+    </svg>
+
 </a>
 
+
+<!-- =======================================================
+     JAVASCRIPT
+======================================================= -->
+
 <script>
-const btn = document.getElementById('menu'), nav = document.getElementById('nav');
-btn.addEventListener('click', () => nav.classList.toggle('open'));
-nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+
+const menu = document.getElementById("menu");
+const nav = document.getElementById("nav");
+
+/* MOBILE MENU */
+
+menu.addEventListener("click", () => {
+
+    const isOpen = nav.classList.toggle("open");
+
+    menu.setAttribute(
+        "aria-expanded",
+        isOpen ? "true" : "false"
+    );
+
+    menu.textContent = isOpen ? "×" : "☰";
+
+});
+
+
+/* CLOSE MENU AFTER CLICK */
+
+nav.querySelectorAll("a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        nav.classList.remove("open");
+
+        menu.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+        menu.textContent = "☰";
+
+    });
+
+});
+
+
+/* REVEAL ON SCROLL */
+
+const revealElements =
+    document.querySelectorAll(".reveal");
+
+if(
+    "IntersectionObserver" in window &&
+    !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+){
+
+    const observer =
+        new IntersectionObserver(
+            (entries, obs) => {
+
+                entries.forEach(entry => {
+
+                    if(entry.isIntersecting){
+
+                        entry.target.classList.add("visible");
+
+                        obs.unobserve(entry.target);
+
+                    }
+
+                });
+
+            },
+            {
+                threshold:.12
+            }
+        );
+
+    revealElements.forEach(element => {
+
+        observer.observe(element);
+
+    });
+
+}else{
+
+    revealElements.forEach(element => {
+
+        element.classList.add("visible");
+
+    });
+
+}
+
+
+/* ESC CLOSE */
+
+document.addEventListener("keydown", event => {
+
+    if(event.key === "Escape"){
+
+        nav.classList.remove("open");
+
+        menu.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+        menu.textContent = "☰";
+
+    }
+
+});
+
 </script>
 
 </body>
