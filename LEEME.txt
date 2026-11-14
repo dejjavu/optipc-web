@@ -1,8 +1,0 @@
-OPTIPC — ACTUALIZACIÓN WEB
-
-- index.html: incluye el enlace “Seguimiento de equipos” en el menú principal.
-- logo-horizontal-transparente.png: logo horizontal PNG con fondo transparente.
-- isotipo-opc-transparente.png: isotipo OPC PNG con fondo transparente.
-- favicon-512.png / favicon-192.png / apple-touch-icon.png / favicon.ico: iconos transparentes.
-
-Subí el contenido de esta carpeta a la misma ubicación donde está publicada tu página, reemplazando los archivos anteriores. Conservá una copia de seguridad antes de reemplazar.
